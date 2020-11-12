@@ -1,0 +1,20 @@
+{
+
+  "manifest_version": 2,
+  "name": "Scrollforce",
+  "version": "1.0",
+
+  "description": "Stop websites from blocking scrolling (e.g. when showing \"privacy\" popups)",
+
+  "icons": {
+    "48": "scrollforce.svg"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["scrollforce.js"]
+    }
+  ]
+
+}
