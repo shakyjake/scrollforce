@@ -40,8 +40,13 @@
     
     const Observer = new MutationObserver(MutationCallback);
 
-    Observer.observe(document.body, MutationConfig);
-    Observer.observe(document.body.parentNode, MutationConfig);
+    if(OriginalOverflowBody !== 'hidden'){
+        Observer.observe(Body, MutationConfig);
+    }
+
+    if(OriginalOverflowHTML !== 'hidden'){
+        Observer.observe(HTML, MutationConfig);
+    }
 
 
 })();
