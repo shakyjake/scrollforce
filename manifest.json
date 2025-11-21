@@ -1,13 +1,16 @@
 {
 
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Scrollforce",
-  "version": "1.0",
+  "version": "1.2.6",
 
   "description": "Stop websites from blocking scrolling (e.g. when showing \"privacy\" popups)",
 
   "icons": {
-    "48": "scrollforce.svg"
+    "32": "scrollforce.svg",
+    "48": "scrollforce.svg",
+    "64": "scrollforce.svg",
+    "96": "scrollforce.svg"
   },
 
   "content_scripts": [
@@ -15,6 +18,16 @@
       "matches": ["<all_urls>"],
       "js": ["scrollforce.js"]
     }
-  ]
+  ],
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{121c9f22-776e-425a-8ebd-54d0ef91c94c}",
+      "strict_min_version": "142.0",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
+    }
+  }
 
 }
