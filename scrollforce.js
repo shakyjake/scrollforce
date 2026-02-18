@@ -1,7 +1,7 @@
 /**
- * Fix for websites (facebook) that forcibly disable scrolling by setting the root container to position: fixed !important
+ * Fix for Facebook, who forcibly disable scrolling by setting the root container to "position: fixed !important"
  */
-function fix_fb(){
+function fix_facebook(){
 	const root = document.querySelector('div');
 	if(root){
 		root.style.position = 'relative !important';

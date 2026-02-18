@@ -2,7 +2,7 @@
 
   "manifest_version": 3,
   "name": "Scrollforce",
-  "version": "1.2.6",
+  "version": "1.2.7",
 
   "description": "Stop websites from blocking scrolling (e.g. when showing \"privacy\" popups)",
 
